@@ -17,6 +17,9 @@ body {
     background-color: #ccc;
     color: var(--primary-text-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Dropdown styles */
@@ -565,7 +568,8 @@ footer {
   color: #dcd6f7;
   border-top: 2px solid #333;
   backdrop-filter: blur(90px);
-  position: relative;
+  position: sticky;
+  bottom: 0;
   display: flex; /* Enable flexbox for footer */
   flex-direction: column; /* Stack text and icons vertically */
   justify-content: center; /* Center content horizontally */
